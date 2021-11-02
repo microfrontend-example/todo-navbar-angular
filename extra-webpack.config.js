@@ -15,6 +15,6 @@ const singleSpaAngularWebpack =
 module.exports = (config, options) => {
   const singleSpaWebpackConfig = singleSpaAngularWebpack(config, options);
 
-  // singleSpaWebpackConfig.externals.push(/^@visma\/.+$/);
+  singleSpaWebpackConfig.externals.push(/^@visma\/.+$/);
   return singleSpaWebpackConfig;
 };
